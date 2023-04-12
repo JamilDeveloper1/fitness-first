@@ -1187,7 +1187,13 @@ a.active{
 }
 
 
-
+.about-container{
+    height:600px;
+    overflow-y:hidden;
+    }
+    .content-about{
+        overflow-y:hidden;
+    }
 
 
 .programs{
