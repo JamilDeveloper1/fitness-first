@@ -1029,6 +1029,7 @@ a.active{
 .preview-box .details{
     line-height: 50px;
     width: 100%;
+    overflow-y: hidden;
 }
 
 
@@ -1040,6 +1041,7 @@ a.active{
 
 .testimonials{
     gap: 2px;
+     overflow-y:hidden;
 }
 
 .testimonial1{
@@ -1279,6 +1281,7 @@ a.active{
 .preview-box .details{
     line-height: 50px;
     width: 100%;
+    overflow-y: hidden;
 }
 
 
@@ -1290,6 +1293,7 @@ a.active{
 
 .testimonials{
     gap: 2px;
+    overflow-y:hidden;
 }
 
 .testimonial1{
@@ -1326,4 +1330,7 @@ a.active{
     width: 100%;
 }
 
+    #sticky{
+position:static;
+    }
 }
