@@ -136,6 +136,7 @@ a.active{
     display: flex;
     align-content: center;
     justify-content: center;
+    overflow-y:hidden;
 }
 
 .content-about{
@@ -143,6 +144,7 @@ a.active{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow-y:hidden;
 }
 
 
