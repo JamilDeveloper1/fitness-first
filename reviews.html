@@ -205,7 +205,7 @@
         </div>
         <div class="social-media">
             <h3>FOLLOW US</h3><br>
-            <a href="https://www.instagram.com" target="_blank" class="fa-brands fa-instagram"></a>  <a href="https://www.instagram.com"  target="_blank" class="fa-brands fa-facebook-f"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fa-brands fa-instagram"></a>  <a href="https://www.facebook.com"  target="_blank" class="fa-brands fa-facebook-f"></a>
         </div>
     
     
@@ -213,11 +213,12 @@
         <div class="form">
             <h3>CONTACT FORM</h3><br>
             <form action="">
-                <input type="text" placeholder="Name"><br>
-                <input type="text" placeholder="Email"><br>
-                <input type="text" placeholder="Phone"><br>
-                <textarea placeholder="Message..." name="" id="" cols="30" rows="10"></textarea><br>
-                <button>SUBMIT</button>
+                
+                <input type="text" placeholder="Name" class="inp-name" required><br>
+            <input type="email" placeholder="Email" class="inp-email" required><br>
+            <input type="text" placeholder="Phone" class="inp-phone" required><br>
+            <textarea class="message-text" placeholder="Message..." name="" id="" cols="30" rows="10" required></textarea><br>
+            <button class="sbmt-btn">SUBMIT</button>
             </form>
     
     
@@ -231,7 +232,37 @@
 
 <script src="menu.js"></script>
 
+<script>
 
+
+    let submitButton = document.querySelector(".sbmt-btn");
+
+submitButton.addEventListener("click",(e)=>{
+    let inpName = document.querySelector(".inp-name");
+    let inpEmail = document.querySelector(".inp-email");
+    let inpPhone = document.querySelector(".inp-phone");
+    let messageText = document.querySelector(".message-text");
+
+
+
+    localStorage.setItem("name",inpName.value);
+    localStorage.setItem("email",inpEmail.value);
+    localStorage.setItem("phone",inpPhone.value);
+    localStorage.setItem("message",messageText.value);
+
+    localStorage.getItem("name");
+    localStorage.getItem("email");
+    localStorage.getItem("phone");
+    localStorage.getItem("message");
+
+
+
+
+})
+
+
+
+</script>
 
     
 </body>
