@@ -1,28 +1,20 @@
-let bar = document.querySelector(".fa-bars");
-let close = document.querySelector(".fa-times");
-let responsiveMenu = document.querySelector(".responsive-menu");
-bar.addEventListener("click",openMenu);
-close.addEventListener("click",closeMenu);
-function openMenu(){
-    responsiveMenu.style.display = "block";
-    bar.style.display = "none";
-    close.style.display = "block";
-}
-function closeMenu(){
-    responsiveMenu.style.display = "none";
-    bar.style.display = "block";
-    close.style.display = "none";
-}
+let bars = document.getElementById("bars");
 
 
 
+bars.addEventListener("click",()=>{
+    let sideNavbar = document.querySelector(".side-navbar");
+    sideNavbar.style.transform = "translateX(0)";
+     sideNavbar.style.transition = "0.5s";
+})
 
 
-
-
-
-
-
+let times = document.getElementById("times");
+times.addEventListener("click",()=>{
+    let sideNavbar = document.querySelector(".side-navbar");
+    sideNavbar.style.transform = "translateX(-100%)";
+     sideNavbar.style.transition = "0.5s";
+})
 
 
 
